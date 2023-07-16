@@ -4,7 +4,7 @@ import { ComponentMeta, ComponentStory } from '@storybook/react';
 
 
 export default {
-  tilte: 'Componentes/AbBotao',
+  title: 'Componentes/AbBotao',
   component: AbBotao,
 } as ComponentMeta<typeof AbBotao>;
 
