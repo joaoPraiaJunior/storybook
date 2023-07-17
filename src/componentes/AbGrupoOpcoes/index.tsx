@@ -6,7 +6,6 @@ export interface AbGrupoOpcao {
   titulo: string;
   corpo: string;
   rodape: string;
-  selcionado: boolean;
 }
 
 export interface AbGrupoOpcoesProps {
