@@ -12,7 +12,7 @@ const TagStyled = styled.div`
     background: #EB9B00;
     padding: 24px 32px;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 1.4rem;
     display: inline-block;
 `
 
