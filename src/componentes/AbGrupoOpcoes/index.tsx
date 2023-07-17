@@ -1,18 +1,6 @@
 import React, { useState } from 'react';
 import { styled } from 'styled-components';
 
-export interface AbGrupoOpcao {
-  id: number;
-  titulo: string;
-  corpo: string;
-  rodape: string;
-}
-
-export interface AbGrupoOpcoesProps {
-  opcoes: AbGrupoOpcao[];
-  valorPadrao?: AbGrupoOpcao | null;
-  onChange: (opcao: AbGrupoOpcao) => void;
-}
 
 const SectionStyled = styled.section<{ selecionado: boolean }>`
   background: ${props =>
@@ -50,6 +38,19 @@ const SectionStyled = styled.section<{ selecionado: boolean }>`
     font-weight: 400;
   }
 `;
+
+export interface AbGrupoOpcao {
+  id: number;
+  titulo: string;
+  corpo: string;
+  rodape: string;
+}
+
+export interface AbGrupoOpcoesProps {
+  opcoes: AbGrupoOpcao[];
+  valorPadrao?: AbGrupoOpcao | null;
+  onChange: (opcao: AbGrupoOpcao) => void;
+}
 
 export const AbGrupoOpcoes = ({ opcoes, onChange, valorPadrao }: AbGrupoOpcoesProps) => {
   const [selecao, setSelecao] = useState<AbGrupoOpcao | null>(valorPadrao ?? null);
