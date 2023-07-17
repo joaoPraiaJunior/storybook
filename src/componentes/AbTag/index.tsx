@@ -7,9 +7,9 @@ export interface AbTagsProps {
 }
 
 const TagStyled = styled.div`
-    font-family: sans-serif; 
     color: #FFFFFF;
     background: #EB9B00;
+    font-family: sans-serif; 
     padding: 24px 32px;
     font-weight: 700;
     font-size: 1.4rem;
